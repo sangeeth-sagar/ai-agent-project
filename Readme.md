@@ -30,7 +30,7 @@ A modern, persistent AI Chatbot built with **FastAPI**, **React**, and **LangGra
 ```bash
 # Clone the repo
 git clone [https://github.com/sangeeth-sagar/ai-agent-project.git](https://github.com/sangeeth-sagar/ai-agent-project.git)
-cd ai-agent-project/backend
+cd ai-agent-project/app
 
 # Create virtual env
 python -m venv venv
@@ -58,6 +58,7 @@ npm install
 npm run dev
 📸 Video Demo
 (https://drive.google.com/file/d/1oddkU2HhoW_OVDKwdCkRYky7s0ckDyYr/view?usp=sharing)
+
 
 
 
