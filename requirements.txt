@@ -1,0 +1,26 @@
+# --- Core Framework ---
+fastapi
+uvicorn
+python-dotenv
+python-multipart   # Required for Login Forms (OAuth2)
+
+# --- Database (PostgreSQL) ---
+sqlalchemy         # ORM for Auth
+psycopg2-binary    # Sync driver (for SQLAlchemy/Auth)
+psycopg            # Async driver v3 (for Chat speed)
+psycopg-pool       # Async connection pool
+
+# --- AI & Logic ---
+langchain
+langchain-community
+langchain-core
+langchain-google-genai  # For Gemini
+langgraph               # For the Agent Workflow
+
+# --- Vector Database ---
+chromadb
+langchain-chroma
+
+# --- Security & Auth ---
+python-jose[cryptography]  # JWT Token generation
+passlib[bcrypt]            # Password hashing
