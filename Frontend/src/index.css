@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Chatbot UI Design System 
+   Palette: Dark Blue #11224e, Orange #f87b1b, Sage #cbd99b, Light Gray #eeeeee
+   All colors in HSL
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 93%; /* #eeeeee light gray */
+    --foreground: 223 65% 19%; /* #11224e dark blue */
+
+    --card: 0 0% 100%;
+    --card-foreground: 223 65% 19%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 223 65% 19%;
+
+    --primary: 223 65% 19%; /* #11224e dark blue */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 70 41% 73%; /* #cbd99b sage */
+    --secondary-foreground: 223 65% 19%;
+
+    --muted: 0 0% 90%;
+    --muted-foreground: 223 30% 40%;
+
+    --accent: 27 95% 54%; /* #f87b1b orange */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 223 20% 80%;
+    --input: 223 20% 85%;
+    --ring: 27 95% 54%;
+
+    --radius: 0.75rem;
+
+    /* Sidebar uses dark blue background */
+    --sidebar-background: 223 65% 19%;
+    --sidebar-foreground: 0 0% 93%;
+    --sidebar-primary: 27 95% 54%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 223 65% 25%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 223 50% 30%;
+    --sidebar-ring: 27 95% 54%;
+
+    /* Chat specific */
+    --chat-user: 27 95% 54%; /* orange for user messages */
+    --chat-user-foreground: 0 0% 100%;
+    --chat-ai: 70 41% 73%; /* sage for AI messages */
+    --chat-ai-foreground: 223 65% 19%;
+  }
+
+  .dark {
+    --background: 223 65% 12%;
+    --foreground: 0 0% 93%;
+
+    --card: 223 65% 15%;
+    --card-foreground: 0 0% 93%;
+
+    --popover: 223 65% 15%;
+    --popover-foreground: 0 0% 93%;
+
+    --primary: 27 95% 54%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 70 41% 30%;
+    --secondary-foreground: 0 0% 93%;
+
+    --muted: 223 50% 20%;
+    --muted-foreground: 0 0% 70%;
+
+    --accent: 27 95% 54%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 93%;
+
+    --border: 223 50% 25%;
+    --input: 223 50% 20%;
+    --ring: 27 95% 54%;
+
+    --sidebar-background: 223 65% 12%;
+    --sidebar-foreground: 0 0% 93%;
+    --sidebar-primary: 27 95% 54%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 223 65% 18%;
+    --sidebar-accent-foreground: 0 0% 93%;
+    --sidebar-border: 223 50% 20%;
+    --sidebar-ring: 27 95% 54%;
+
+    --chat-user: 27 95% 54%;
+    --chat-user-foreground: 0 0% 100%;
+    --chat-ai: 223 50% 25%;
+    --chat-ai-foreground: 0 0% 93%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom scrollbar for chat */
+.chat-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.chat-scrollbar::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted-foreground) / 0.3);
+  border-radius: 3px;
+}
+
+.chat-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground) / 0.5);
+}
+
+/* Markdown code blocks */
+.markdown-content pre {
+  @apply bg-primary text-primary-foreground p-4 rounded-lg overflow-x-auto my-2;
+}
+
+.markdown-content code {
+  @apply bg-muted px-1.5 py-0.5 rounded text-sm;
+}
+
+.markdown-content pre code {
+  @apply bg-transparent p-0;
+}
