@@ -6,7 +6,7 @@
       "use": "@vercel/python"
     },
     {
-      "src": "frontend/package.json",
+      "src": "Frontend/package.json",
       "use": "@vercel/static-build"
     }
   ],
@@ -17,13 +17,13 @@
     },
     {
       "src": "/(.*)",
-      "dest": "frontend/$1",
+      "dest": "Frontend/$1",
       "check": true
     },
     {
       "src": "/(.*)",
       "status": 404,
-      "dest": "frontend/index.html"
+      "dest": "Frontend/index.html"
     }
   ]
 }
