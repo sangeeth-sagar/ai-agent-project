@@ -12,6 +12,9 @@ psycopg_pool
 pydantic_settings
 email-validator
 
+
+langchain_chroma
+
 # --- AI & Logic (Core Libraries Only) ---
 # Using specific sub-libraries prevents pulling in 100MB of unused code
 langchain-core
