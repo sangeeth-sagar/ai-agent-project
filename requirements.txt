@@ -6,7 +6,7 @@ python-multipart
 # --- Database (PostgreSQL Cloud) ---
 # We use psycopg[binary] for speed, but keep it minimal
 sqlalchemy
-psycopg[binary,pool]
+psycopg2-binary
 
 # --- AI & Logic (Core Libraries Only) ---
 # Using specific sub-libraries prevents pulling in 100MB of unused code
