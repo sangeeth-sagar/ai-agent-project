@@ -9,6 +9,8 @@ sqlalchemy
 psycopg2-binary
 psycopg[binary]
 psycopg_pool
+pydantic_settings
+
 # --- AI & Logic (Core Libraries Only) ---
 # Using specific sub-libraries prevents pulling in 100MB of unused code
 langchain-core
