@@ -1,9 +1,7 @@
 import axios, { AxiosError, InternalAxiosRequestConfig } from 'axios';
 
-const api = axios.create({
-  // Use localhost if testing locally, use relative '/api' if on Vercel
-  baseURL: import.meta.env.DEV ? 'http://localhost:8000' : '' 
-});
+const API_BASE_URL = import.meta.env.VITE_API_URL || (import.meta.env.DEV ? 'http://localhost:8000' : '');
+
 export const api = axios.create({
   baseURL: API_BASE_URL,
   headers: {
