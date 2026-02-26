@@ -7,8 +7,7 @@ python-multipart
 # We use psycopg[binary] for speed, but keep it minimal
 sqlalchemy
 psycopg2-binary
-psycopg2-pool
-
+psycopg_pool
 # --- AI & Logic (Core Libraries Only) ---
 # Using specific sub-libraries prevents pulling in 100MB of unused code
 langchain-core
