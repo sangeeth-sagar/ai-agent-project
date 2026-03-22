@@ -26,6 +26,10 @@ A modern, persistent AI Chatbot built with **FastAPI**, **React**, and **LangGra
 * Node.js & npm
 * PostgreSQL installed and running
 
+* 
+📸 Video Demo
+(https://drive.google.com/file/d/1oddkU2HhoW_OVDKwdCkRYky7s0ckDyYr/view?usp=sharing)
+
 ### 1. Backend Setup
 ```bash
 # Clone the repo
@@ -56,8 +60,6 @@ npm install
 
 # Run React App
 npm run dev
-📸 Video Demo
-(https://drive.google.com/file/d/1oddkU2HhoW_OVDKwdCkRYky7s0ckDyYr/view?usp=sharing)
 
 
 
